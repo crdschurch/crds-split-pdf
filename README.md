@@ -12,13 +12,13 @@ MacOS 10.12 or later
 The latest build is committed to this repository in the `/dist` folder.  To run the program, download the `SegmentStatements.zip` file to your Mac, double-click to unzip, then double click the `Segment Statements` application bundle to start the application.
 
 ### Development notes
-The project was built with Xcode 8.3.3.  Since we don't currently have TeamCity build agents that are capable of supporting Xcode projects, the compiled output is included in the `/dist` folder in this repository (bundled as a single .zip file).  The Xcode project includes a Scheme named **Segment Statements** that is appropriate for building/running/debugging the application, and also includes a second Scheme named **Segment Statements ZIP** that will automatically build a Release version of the application, then create/update the .zip file in the `/dist` folder.
+The project was built with Xcode 8.3.3.  Since we don't currently have TeamCity build agents that are capable of supporting Xcode projects, the compiled output is included in the `/dist` folder in this repository (bundled as a single .zip file).  The Xcode project includes a Scheme named **Segment Statements** that is appropriate for building/running/debugging the application, and also includes a second Scheme named **Segment Statements ZIP** that will automatically build a Release version of the application, then create/update the `SegmentStatements.zip` file in the `/dist` folder.
 
 To run/debug normally:
 1. Set the Scheme to **Segment Statements**
 2. Choose **Run** / **Build** / **Profile** / etc. from the **Product** menu.
 
-To create the /dist/SegmentStatements.zip file:
+To create the `/dist/SegmentStatements.zip` file:
 1. Set the Scheme to **Segment Statements ZIP**
 2. Choose **Build** from the **Product** menu.  The .zip file will be created/updated automatically.
-3. Commit to github
+3. Commit and push to github
